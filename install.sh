@@ -1,3 +1,3 @@
 #!/bin/sh
 
-pip install redmine
+pip install python-redmine
