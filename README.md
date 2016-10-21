@@ -5,4 +5,6 @@ Snippet collection for the vim ultsnips plugin https://github.com/SirVer/ultisni
 
 ## Recommended with vim-plug
 
-Plug 'schuster-rainer/vim-ultisnippets', { 'dir': '~/.vim/UltiSnips', 'do': './install.sh'}
+To install the dependend python-redmine package when you want to use the refs snippet
+
+Plug 'schuster-rainer/vim-ultisnippets', { 'do': './install.sh'}
