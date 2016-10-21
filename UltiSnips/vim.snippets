@@ -1,0 +1,20 @@
+
+snippet let "let binding" b
+let ${1:name}=${2:value}
+endsnippet
+
+snippet plug "Add a vim-plug" b
+Plug '${1:repo}'
+endsnippet
+
+snippet plugf "vim-plug add install function" b
+function! ${1:funcname}(info)
+  " info is a dictionary with 3 fields
+  " - name:  ${2:name_of_plugin}
+  " - status: 'installed', 'updated', or 'unchanged'
+  " - force:  set on PlugInstall! or PlugUpdate!
+  if a:info.status == 'installed' || a:info.force
+    !${3:shell_code}
+  endif
+endfunction
+endsnippet
